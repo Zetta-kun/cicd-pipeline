@@ -1,4 +1,4 @@
-from FastAPI import FastAPI
+from fastapi import FastAPI
 import datetime
 import os
 
