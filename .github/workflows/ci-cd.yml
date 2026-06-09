@@ -67,26 +67,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       
-      - name: Debug Docker secrets
-        run: |
-          echo "========================================="
-          echo "DEBUGGING DOCKER SECRETS"
-          echo "========================================="
-          if [ -n "${{ secrets.DOCKER_USERNAME }}" ]; then
-            echo "✅ DOCKER_USERNAME is set"
-            echo "   Value: ${{ secrets.DOCKER_USERNAME }}"
-          else
-            echo "❌ DOCKER_USERNAME is NOT set"
-          fi
-          
-          if [ -n "${{ secrets.DOCKER_TOKEN }}" ]; then
-            echo "✅ DOCKER_TOKEN is set"
-            echo "   Token is set (length hidden for security)"
-          else
-            echo "❌ DOCKER_TOKEN is NOT set"
-          fi
-          echo "========================================="
-      
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       
