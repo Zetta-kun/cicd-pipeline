@@ -1,4 +1,4 @@
-from fastapi import FastAP
+from fastapi import FastAPI
 import sys
 sys.path.append(".")
 
