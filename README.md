@@ -1,7 +1,7 @@
 # 🔄 CI/CD Pipeline with GitHub Actions
 
 [![CI/CD Pipeline](https://github.com/Zetta-kun/cicd-pipeline/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Zetta-kun/cicd-pipeline/actions/workflows/ci-cd.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/zetta/cicd-pipeline)](https://hub.docker.com/r/zetta/cicd-pipeline)
+[![Docker Pulls](https://img.shields.io/docker/pulls/zetta255/cicd-pipeline)](https://hub.docker.com/repository/docker/zetta255/cicd-pipeline/general)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
 ## 📌 About
