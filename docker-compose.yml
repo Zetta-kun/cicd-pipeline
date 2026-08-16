@@ -1,0 +1,52 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: babapiro-api
+    ports:
+      - "8080:8080"
+    environment:
+      - ENVIRONMENT=development
+      - LOG_LEVEL=debug
+      - REDIS_HOST=cache
+      - REDIS_PORT=6379
+
+    volumes:
+      - .:/app
+
+    depends_on:
+      cache:
+        condition: service_healthy
+    
+    networks:
+      - babapiro-network
+    restart: unless-stopped
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload --workers 2
+  cache:
+    image: redis:7-alpine
+    container_name: babapiro-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data  
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+    restart: unless-stopped
+    networks:
+      - babapiro-network
+ 
+
+networks:
+  babapiro-network:
+    driver: bridge
+
+
+volumes:
+  redis-data:
+    driver: local      
