@@ -6,7 +6,7 @@ A production-ready FastAPI application demonstrating modern DevOps practices inc
 [![Build & Deploy](https://github.com/Zetta-kun/cicd-pipeline/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/Zetta-kun/cicd-pipeline/actions/workflows/build-deploy.yml)
 [![Python Versions](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Docker Pulls](https://img.shields.io/badge/docker-ghcr.io-blue.svg)](https://github.com/Zetta-kun/cicd-pipeline/pkgs/container/YOUR_REPO)
+
 
 ---
 
