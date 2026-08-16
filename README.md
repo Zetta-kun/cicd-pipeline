@@ -16,18 +16,6 @@ A production-ready FastAPI application demonstrating modern DevOps practices inc
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Local Development](#local-development)
-  - [Docker Deployment](#docker-deployment)
-  - [Docker Compose](#docker-compose)
-- [API Documentation](#api-documentation)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Testing](#testing)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ---
 
